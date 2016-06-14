@@ -8,7 +8,8 @@
                 "sourceComments": "map",
                 "outputStyle": "compressed"
             },
-            "brackets-git.gitPath": "git"
+            "brackets-git.gitPath": "git",
+            "linting.collapsed": false
         }
     }
 }

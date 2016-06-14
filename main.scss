@@ -52,7 +52,8 @@ table {
 
 
 header{ 
-  margin: 65px 10px;
+  max-width: 1150px;
+  margin: 2rem auto;
   text-align: center;
   &:after{
     clear:both;
@@ -67,7 +68,6 @@ header{
     font-family: 'Montserrat', arial;
     font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 10px;
     @media (min-width:768px){
     float:left;
   }
@@ -78,6 +78,8 @@ header{
     list-style: none;
     @media (min-width:768px){
     float:right;
+    margin-top: 5px;
+    text-align: right;
   }
   }
   li{
@@ -421,5 +423,96 @@ footer{
     img{
       border-radius: 100%;
     }
+  }
+}
+
+/*---------CLIENTS SAY SECTION---------------*/
+
+.clients-say{
+  max-width: 1150px;
+  margin: 0 auto;
+  .wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    @media (min-width: 768px){
+      display:flex;
+      flex-direction: row-reverse;
+    }
+    div{
+      @media (min-width: 768px){
+        max-width: 50%;
+      }
+    }
+  }
+    h2{
+      font-family: 'Montserrat Hairline', arial;
+      font-size: 3.750rem;
+      text-align: center;
+      margin: 5.5rem;
+    }
+    .testimonial-text{
+      p{
+        font-family: 'Montserrat Light', arial;
+        font-size: (18px/16px) *1em;
+        color: #656565;
+        margin: 1rem;
+      }
+    }
+      .testimonial-person{
+        text-align: right;
+        h3{
+          font-size: 2.5rem;
+          font-weight:bold;
+          font-family: 'Montserrat', arial;
+          margin: 1rem;
+          &:after{
+            content:"";
+            display:block;
+            width: 55px;
+            border-bottom:3px solid black;
+            margin: 1rem;
+            position:absolute;
+            right:0;
+            @media (min-width:768px){
+              position: sticky;
+              right: 50%
+              
+            }
+          }
+        }
+        p{
+          font-family: 'Montserrat Light', arial;
+          font-size: (18px/16px) *1em;
+          margin: 2rem 1rem;
+          
+      }
+    }
+  .img-wrapper{
+    margin: 0 auto 8rem;
+    @media (min-width:768px){
+        display:flex;
+      }
+    .left-photos{
+      text-align:right;
+    }
+
+    div{
+      display: inline-block;
+      max-width: 49%;
+      height: auto;
+      @media (min-width:768px){
+        max-width: 100%;
+      }
+      
+    }
+    img{
+      margin:  0.25rem 0.5rem;
+      width: 98%;
+      height: auto;
+      @media (min-width:768px){
+        width:266px;
+        height:140px;
+    }
+  }
   }
 }
