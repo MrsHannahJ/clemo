@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*---------HEADER---------------*/
+
+
+header{ 
+  margin: 65px 10px;
+  text-align: center;
+  &:after{
+    clear:both;
+    content:"";
+    display:table;
+  }
+  @media (min-width:768px){
+    text-align: left;
+    max-width: 1150px;
+  }
+  h1{
+    font-family: 'Montserrat', arial;
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    @media (min-width:768px){
+    float:left;
+  }
+  }
+  ul{
+    font-family: 'Montserrat Light', arial;
+    font-size: 1.125rem;
+    list-style: none;
+    @media (min-width:768px){
+    float:right;
+  }
+  }
+  li{
+    display: inline;
+    
+  }
+  a{
+    padding: 0 10px;
+    color: #989898;
+    text-decoration: none;
+  }
+}
+
+
+/*---------FOOTER---------------*/
+
+
+footer{
+  .contact-info{
+    background-color:black;
+    padding:90px 10px;
+    color:white;
+    .wrapper{
+      max-width: 1150px;
+      margin: 0 auto;
+      
+    }
+  h2{
+    font-family: 'Montserrat Hairline', arial;
+    font-size: 3.750rem;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .contact-details{
+    font-family: 'Montserrat Light', arial;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    @media (min-width:768px){
+      float:left;
+      width: 50%;
+    }
+    p{
+      text-indent: -1rem;
+      margin-left: 2rem;
+      margin-bottom: 40px;
+      i{
+        margin-right: 1rem;
+      }
+    }
+    
+    li{
+     display:inline-block;
+      a{
+        display: block;
+        background-color: white;
+        color: black;
+        border-radius: 100%;
+        width:2rem;
+        height: 2rem;
+        padding:.5rem;
+        margin: .5rem;
+        
+      }
+    }
+    
+    }
+    form{
+      &:after{
+          clear:both;
+          content:"";
+          display:table;
+      @media (min-width:768px){
+      float:right;
+      width: 50%;
+        
+    }
+    }
+      input[type="text"]{
+        background-color: black;
+        color:white;
+        display: block;
+        border: none;
+        border-bottom:1px solid #333333;
+        margin-bottom: 3rem;
+        font-family: 'Montserrat Light', arial;
+        font-size: 1.125rem;
+      }
+      textarea{
+        display: block;
+        background-color: black;
+        color:white;
+        border:none;
+        border-bottom:1px solid #333333;
+        margin-bottom: 3rem;
+        font-family: 'Montserrat Light', arial;
+        font-size: 1.125rem;
+      }
+      input[type="submit"]{
+        background-color:white;
+        border:0 none;
+        color: black;
+        border-radius: 1.5rem;
+        display: block;
+        padding: 0.75rem 3rem;
+        font-family: 'Montserrat Light', arial;
+        font-size: 1.125rem;
+        
+      }
+    }
+  }
+
+}
+
+.copyright{
+  text-align: center;
+  margin: 50px 10px;
+  p{
+    font-family: 'Montserrat Light', arial;
+    font-size: 0.875rem;
+    color: #656565;
+  }
+  p:first-child{
+    font-family: 'Montserrat', arial;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+    color: black;
+  }
+}
+
+
+/*---------MAIN---------------*/
+
+.hero{
+  background-color: #ffe1bd;
+  color: black;
+  max-width:1150px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 145px 0 100px;
+  font-family: 'Montserrat Light', arial;
+  font-size: (24px/16px) *1em;
+  h2{
+    font-size: 3rem;
+    font-weight:bold;
+    font-family: 'Montserrat', arial;
+    &:after{
+      content:"";
+      display:block;
+      width: 55px;
+      border-bottom:3px solid black;
+      margin: 2rem auto;
+    }
+    
+  }
+  p{
+      line-height: 1.5;
+    }
+  a{
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px;
+      padding: 0.75rem 3rem;
+      width: auto;
+      border-radius: 1.5rem;
+      font-family: 'Montserrat Light', arial;
+      font-size: 1.125rem;
+    }
+}
+
+/*---------WHAT WE DO SECTION---------------*/
+
+
+.what-we-do{
+  h2{
+    font-family: 'Montserrat Hairline', arial;
+    font-size: 3.750rem;
+    text-align: center;
+    margin: 90px 0;
+  }
+
+  .wrapper{
+    max-width: 1150px;
+    margin: 0 auto 100px;
+    &:nth-child(odd){
+      @media (min-width: 768px){
+        flex-direction:row-reverse;
+      }
+    }
+    @media (min-width: 768px){
+      display: flex;
+    }
+    div{
+      margin: 0 20px;
+      @media (min-width: 768px){
+       width: 50%;
+      
+      } 
+    }
+      
+      img{
+      width: 100%;
+      height: auto;
+          
+    }
+    
+    
+    h3{
+    font-family: 'Montserrat', arial;
+    font-weight: 700;
+    font-size: (48px/16px) *1rem;
+    margin-bottom: 5px;
+    color: black;
+      &:after{
+      content:"";
+      display:block;
+      width: 55px;
+      border-bottom:3px solid black;
+      margin: 1.875rem 0;
+    }
+      span{
+        font-family: 'Montserrat Light', arial;
+        font-size: (30px/16px) *1rem;
+        color: black;
+        
+      }
+    }
+    p{
+      color: #656565;
+      font-family: 'Montserrat Light', arial;
+      font-size: (18px/16px) *1rem;
+      line-height: 1.5;
+      
+    }
+    a{
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.75rem 2.75rem;
+      width: auto;
+      border: 1px solid #656565;
+      border-radius: 1.5rem;
+      font-family: 'Montserrat Light', arial;
+      font-size: 1.125rem;
+      margin-top: 50px;
+    }
+  }
+}
+
+/*---------OUR BEST WORK SECTION---------------*/
+
+
+.best-work{
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  h2{
+    font-family: 'Montserrat Hairline', arial;
+    font-size: 3.750rem;
+    text-align: center;
+    margin: 90px 0;
+  }
+  .wrapper{
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom:1rem;
+    }
+    div{
+      margin:0 1rem;
+      @media (min-width: 768px){
+        display: inline-block;
+        max-width: 30.5%;
+        margin: 1rem 0.5rem;
+      }
+  }
+  }
+  a{
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.75rem 3rem;
+      width: auto;
+      border-radius: 1.5rem;
+      font-family: 'Montserrat Light', arial;
+      font-size: 1.125rem;
+      margin: 1.125rem 0 3.125rem;
+    }
+}
+
+/*---------OUR TEAM SECTION---------------*/
+
+.our-team{
+  background-color: #ffe1bd;
+  color: black;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 5.5rem 0;
+  font-family: 'Montserrat Light', arial;
+  font-size: (24px/16px) *1em;
+  h2{
+      font-family: 'Montserrat Hairline', arial;
+      font-size: 3.750rem;
+      text-align: center;
+      margin-bottom: 5.5rem;
+      }
+  div{
+    margin:auto;    
+  }
+  .wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    @media (min-width: 768px){
+      display:flex;
+      
+    }
+    h3{
+      font-size: 2.5rem;
+      font-weight:bold;
+      font-family: 'Montserrat', arial;
+      margin: 1rem;
+      &:after{
+        content:"";
+        display:block;
+        width: 55px;
+        border-bottom:3px solid black;
+        margin: 1rem auto;
+    }
+    }
+    p{
+      font-family: 'Montserrat Light', arial;
+      font-size: (18px/16px) *1em;
+      margin-bottom: 2rem;
+    }
+    img{
+      border-radius: 100%;
+    }
+  }
+}
