@@ -13,6 +13,14 @@ $mont-hair:'Montserrat Hairline', arial;
 
 $brand: #ffe1bd;
 
+@mixin dash($x:1rem auto){
+  content:"";
+  display:block;
+  width: 3.5rem;
+  border-bottom:0.1875rem solid black;
+  margin:$x;
+}
+
 
 body {
 	background: white;
@@ -26,14 +34,13 @@ body {
 .thin-hr{
   border:0;
   border-top: 0.25px solid #d8d8d8;
-
-
 }
 
 .thick-hr{
   border:0;
   border-bottom: 3px solid #d8d8d8;
 }
+
 
 
 
@@ -283,13 +290,8 @@ footer{
     font-weight:700;
     font-family: $mont;
     &:after{
-      content:"";
-      display:block;
-      width: 3.5rem;
-      border-bottom:0.1875rem solid black;
-      margin: 2rem auto;
+      @include dash (2rem auto);
     }
-    
   }
   p{
       line-height: 1.5;
@@ -351,11 +353,7 @@ footer{
     margin-bottom: 0.3125rem;
     color: black;
       &:after{
-      content:"";
-      display:block;
-      width: 3.5rem;
-      border-bottom:0.1875rem solid black;
-      margin: 1.875rem 0;
+      @include dash(1.875rem 0);
     }
       span{
         font-family: $mont-light;
@@ -447,7 +445,7 @@ footer{
       margin-bottom: 5.5rem;
       }
   div{
-    margin:auto;    
+    margin:auto;
   }
   .wrapper{
     max-width: 1150px;
@@ -462,11 +460,7 @@ footer{
       font-family: $mont;
       margin: 1rem;
       &:after{
-        content:"";
-        display:block;
-        width: 3.5rem;
-        border-bottom:0.1875rem solid black;
-        margin: 1rem auto;
+        @include dash;
     }
     }
     p{
@@ -520,11 +514,7 @@ footer{
           font-family: $mont;
           margin: 1rem;
           &:after{
-            content:"";
-            display:block;
-            width: 3.5rem;
-            border-bottom:0.1875rem solid black;
-            margin: 1rem;
+            @include dash(1rem);
             position:absolute;
             right:0;
             @media (min-width:768px){
@@ -625,11 +615,7 @@ footer{
       color: black;
       margin-bottom: 3.125rem;
         &:before{
-        content:"";
-        display:block;
-        width: 3.5rem;
-        border-bottom:0.1875rem solid black;
-        margin-bottom: 3.125rem;
+        @include dash(0 0 3.125rem);
       }
     }
     p{
@@ -639,11 +625,7 @@ footer{
       line-height: 1.5;
       margin-bottom: 3.125rem;
       &:before{
-        content:"";
-        display:block;
-        width: 3.5rem;
-        border-bottom:0.1875rem solid black;
-        margin-bottom: 3.125rem;
+        @include dash(0 0 3.125rem);
     }
     }
     a{
@@ -687,11 +669,7 @@ footer{
       font-family: $mont;
       margin: 1rem;
       &:after{
-        content:"";
-        display:block;
-        width: 3.5rem;
-        border-bottom:0.1875rem solid black;
-        margin: 1rem auto;
+        @include dash;
     }
     }
     p{
