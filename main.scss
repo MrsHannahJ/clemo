@@ -97,7 +97,7 @@ table {
 /*--------------HEADER---------------*/
 
 
-header{ 
+header{
   max-width: 1150px;
   margin: 4rem auto;
   text-align: center;
@@ -313,7 +313,7 @@ footer{
 /*---------WHAT WE DO SECTION---------------*/
 
 
-.what-we-do{
+.what-we-do, .services{
   h2{
     font-family: $mont-hair;
     font-size: 3.750rem;
@@ -337,7 +337,7 @@ footer{
       @media (min-width: 768px){
        width: 50%;
       
-      } 
+      }
     }
       
       img{
@@ -388,7 +388,7 @@ footer{
 /*---------BEST WORK SECTION---------------*/
 
 
-.best-work{
+.best-work, .works{
   max-width: 1150px;
   margin: 0 auto;
   text-align: center;
@@ -409,11 +409,11 @@ footer{
       @media (min-width: 768px){
         display: inline-block;
         max-width: 30.5%;
-        margin: 1rem 0.5rem;
+        margin: 0 0.5rem;
       }
   }
   }
-  a{
+  .a-more-dark{
       background-color: black;
       color: white;
       text-decoration: none;
@@ -423,7 +423,7 @@ footer{
       border-radius: 1.5rem;
       font-family: $mont-light;
       font-size: 1.125rem;
-      margin: 1.125rem 0 3.125rem;
+      margin: 2.125rem 0 3.125rem;
     }
 }
 
@@ -720,3 +720,62 @@ footer{
       margin: 3.125rem auto 5.5rem;
     }
 }
+
+
+/*---------------------------------------*/
+
+/*-------------SERVICES PAGE---------------*/
+
+/*---------------------------------------*/
+
+//styles from home page, what we do section
+
+
+
+/*---------------------------------------*/
+
+/*-------------WORKS PAGE---------------*/
+
+/*---------------------------------------*/
+
+//styles from home page, best work section
+
+.works-nav{
+  max-width: 1150px;
+  margin: 4rem auto 5.5rem;
+  text-align: center;
+  }
+  ul{
+    font-family: $mont-light;
+    font-size: 1.125rem;
+    list-style: none;
+  }
+    li{
+      display: inline;
+      a{
+        padding: 0 0.625rem;
+        color: #989898;
+        text-decoration: none;
+        &:hover{
+        color:black;
+        }
+    }
+}
+
+        
+
+
+/*---------------------------------------*/
+
+/*-------------BLOG PAGE---------------*/
+
+/*---------------------------------------*/
+
+
+
+
+/*---------------------------------------*/
+
+/*-------------CONTACT PAGE---------------*/
+
+/*---------------------------------------*/
