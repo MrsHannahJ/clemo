@@ -787,10 +787,104 @@ footer{
 }
 
 
-
-
 /*---------------------------------------*/
 
 /*-------------CONTACT PAGE---------------*/
 
 /*---------------------------------------*/
+
+.contact{
+    padding:5.5rem 1rem;
+    color:#656565;
+    .wrapper{
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+  h2{
+    font-family: $mont-hair;
+    font-size: 3.750rem;
+    text-align: center;
+    margin-bottom: 5.5rem;
+  }
+  .contact-details{
+    font-family: $mont-light;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    @media (min-width:768px){
+      float:left;
+      width: 50%;
+    }
+    p{
+      text-indent: -1rem;
+      margin-left: 2rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.25;
+      i{
+        margin-right: 1rem;
+      }
+    }
+    li{
+     display:inline-block;
+      a{
+        display: block;
+        background-color: black;
+        color: white;
+        border-radius: 100%;
+        width:2rem;
+        height: 2rem;
+        padding:.5rem;
+        margin: .5rem;
+      }
+    }
+    }
+    form{
+      &:after{
+          clear:both;
+          content:"";
+          display:table;
+      @media (min-width:768px){
+      float:right;
+      width: 50%;
+    }
+    }
+      input[type="text"]{
+        color:#656565;
+        display: block;
+        border: none;
+        border-bottom:0.0625rem solid #333333;
+        margin-bottom: 3rem;
+        font-family: $mont-light;
+        font-size: 1.125rem;
+      }
+      textarea{
+        display: block;
+        color:#656565;
+        border:none;
+        border-bottom:0.0625rem solid #333333;
+        margin-bottom: 3rem;
+        font-family: $mont-light;
+        font-size: 1.125rem;
+      }
+      input[type="submit"]{
+        background-color:black;
+        border:0 none;
+        color: white;
+        border-radius: 1.5rem;
+        display: block;
+        padding: 0.75rem 3rem;
+        font-family: $mont-light;
+        font-size: 1.125rem;
+        
+      }
+    }
+  }
+
+
+
+
+
+
+.map{
+  width:100%;
+  height: auto;
+}

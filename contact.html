@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Clemo</title>
+   <meta name=”description” content=”Clemo is a powerful team of creative professionals who can help manage all aspects of design projects”>
+   <meta name="author" content="hannah jones">
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+               <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+  </head>
+  <body>
+   
+<!----------HEADER-------------------------->
+   
+    <header>
+       <h1><a href="index.html">clemo.</a></h1>
+       <nav>
+         <ul>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="works.html">works</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+<!----------CONTACT--------------------->
+    <main>
+      <div class="contact">
+       <div class="wrapper">
+        <h2>contact</h2>
+        <div class="contact-details">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>23 Mulholland Drive, Suite 721. Los Angeles 10010
+  <br>100 S. Main Street. Los Angeles 90012</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>+1-670-567-5590</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>hello@clemocreative.com</p>
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+          </ul>
+          </div>
+          <form>
+            <input type="text" placeholder="name" size="46">
+            <input type="text" placeholder="email" size="46">
+            <textarea placeholder="your message" cols="45" rows="4"></textarea>
+            <input type="submit" value="submit">
+          </form>
+        </div>
+      </div>
+    
+<!----------GOOGLE MAP API----------------->
+ <!----------move to js and styled maps to grayscale----------------->
+  
+      
+         <div class="map">
+           <div style='overflow:hidden;height:450px;width:1400px;'><div id='gmap_canvas' style='height:450px;width:1400px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+           
+           <script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(34.0511451,-118.2435949),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(34.0511451,-118.2435949)});infowindow = new google.maps.InfoWindow({content:'<strong>clemo map</strong><br>100 s. main street, los angeles 90012<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+         </div>
+        
+    </main>
+    
+<!-----------FOOTER-------------------------->
+    
+    <footer>
+      <div class="copyright">
+        <p>&copy;2016 clemo.</p>
+        <p>all rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
