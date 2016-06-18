@@ -313,7 +313,7 @@ footer{
 /*---------WHAT WE DO SECTION---------------*/
 
 
-.what-we-do, .services{
+.what-we-do, .services, .blog{
   h2{
     font-family: $mont-hair;
     font-size: 3.750rem;
@@ -413,6 +413,7 @@ footer{
       }
   }
   }
+}
   .a-more-dark{
       background-color: black;
       color: white;
@@ -425,7 +426,7 @@ footer{
       font-size: 1.125rem;
       margin: 2.125rem 0 3.125rem;
     }
-}
+
 
 /*---------OUR TEAM SECTION---------------*/
 
@@ -740,7 +741,7 @@ footer{
 
 //styles from home page, best work section
 
-.works-nav{
+.works-nav, .blog-nav{
   max-width: 1150px;
   margin: 4rem auto 5.5rem;
   text-align: center;
@@ -770,6 +771,20 @@ footer{
 /*-------------BLOG PAGE---------------*/
 
 /*---------------------------------------*/
+
+//styles from home page, what we do section
+
+//nav styles from works page
+
+
+
+.center-text{
+  text-align: center;
+}
+
+.a-more-dark{
+  margin: 0 auto 5.5rem;
+}
 
 
 
